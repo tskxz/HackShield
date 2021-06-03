@@ -1,4 +1,4 @@
-<CustomTheme>
+  <CustomTheme>
   <!-- This defines the layout of the windows. The valid choices are:
   blue, green, white, mint, greencompact, riptide, colamaeleon and riptide2 - corresponding to the themes of those colors in the base game-->
   <themeLayoutName>mint</themeLayoutName>

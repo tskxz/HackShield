@@ -15,7 +15,7 @@
   <StartingActions>Actions/StartingActions.xml</StartingActions>
 
   <!-- Description that appears within Hacknet -->
-  <Description> --- HackShield ---
+  <Description> --- HackShield ---  
 Hacknet Extension to solve puzzles and codes and much more.</Description>
   
   <!-- Factions involved in this extension! You can define as many or as few as you like -->
