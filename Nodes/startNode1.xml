@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="startNode1" name="Pharmacy Employee Karen" type="2" icon="laptop">
+
+  <portsForCrack val="0" />
+  <ports>21</ports>
+  <trace time="-1" />
+
+  <file path="home/games" name="hacknet.exe">#BINARY#</file>
+  <file path="home/games" name="amongus.exe">#BINARY#</file>
+  <file path="home" name="google-chrome.deb">#BINARY#</file>
+  <file path="home" name="firefox.deb">#BINARY#</file>
+  <file path="home" name="libraryoffice.deb">#BINARY#</file>
+
+</Computer>

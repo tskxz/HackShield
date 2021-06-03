@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="startNode2" name="Pharmacy Employee Mary" type="2" icon="laptop">
+
+  <portsForCrack val="1" />
+  <ports>21</ports>
+  <trace time="-1" />
+
+  <file path="home/desktop" name="trash">#BINARY#</file>
+  <file path="home/desktop" name="message.bin">01101111 01101101 01100101 00110001 00111001 00111001 01110100 01101011 01101111 01100101 01110000 01110111 01110001 01001101 01000000 00100001</file>
+
+</Computer>

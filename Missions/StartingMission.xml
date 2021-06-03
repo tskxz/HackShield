@@ -2,6 +2,7 @@
 <mission id="startingMission">
   <goals>
     <!-- Goals here -->
+    <goal type="getstring" target="6F6D65313939746B6F657077714D40" />
   </goals>
   <!-- 
   Add your mission start and end items here
@@ -13,13 +14,24 @@
   <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
   -->
   <email>
-    <sender>SENDER NAME HERE</sender>
-    <subject>This is an example email for Blank Extension</subject>
-    <body>You should add the body of the email here.
-Multiple lines etc.
+    <sender>TSK</sender>
+    <subject>Discovering the mobile phone password</subject>
+    <body>
+Hey #PLAYERNAME#. Before starting, I just wanted to make some challenges for you.
+I'll leave the IP for you to connect and discover an exploit and have it converted to hexadecimal. Please send it to me.
+The exploit is a binary code that contains the mobile phone password.
+
+Thanks,
+
+- TSK
+
+PS: I recommend that you point into a notepad without spaces and convert it from binary to hexadecimal.
 </body>
     <attachments>
       <!-- Add attachments like links and notes here -->
+      <note title="IP ADDRESS">
+198.112.596
+      </note>
     </attachments>
   </email>
 </mission>

@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="startNode" name="Pharmacy" ip="198.112.596" type="2" icon="kellis">
+
+  <portsForCrack val="1" />
+  <ports>21</ports>
+  <trace time="-1" />
+
+  <file path="home/products" name="Pills.dat">#BINARY#</file>
+  <file path="home/products" name="Syrups.dat">#BINARY#</file>
+  <file path="home/products" name="Condoms.dat">#BINARY#</file>
+
+  <dlink target="startNode1" />
+  <dlink target="startNode2" />
+
+</Computer>

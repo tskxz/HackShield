@@ -1,7 +1,9 @@
 <ConditionalActions>
   
   <Instantly>
-    <AddAsset FileName="RTSPCrack.exe" FileContents="#RTSP_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
+    <AddAsset FileName="RTSPCrack.sh" FileContents="#RTSP_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
+    <RunFunction FunctionName="setFaction:startingfac" FunctionValue="0" />
+    <AddAsset FileName="FTP.sh" FileContents="#FTP_CRACK#" TargetComp="playerComp" TargetFolderpath="bin" />
     <RunFunction FunctionName="setFaction:startingfac" FunctionValue="0" />
     
   </Instantly>
