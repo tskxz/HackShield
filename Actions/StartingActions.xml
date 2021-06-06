@@ -1,10 +1,11 @@
 <ConditionalActions>
   
   <Instantly>
-    <AddAsset FileName="RTSPCrack.sh" FileContents="#RTSP_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
+    <AddAsset FileName="RTSPSolve.sh" FileContents="#RTSP_EXE#" TargetComp="playerComp" TargetFolderpath="bin" />
     <RunFunction FunctionName="setFaction:startingfac" FunctionValue="0" />
     <AddAsset FileName="FTP.sh" FileContents="#FTP_CRACK#" TargetComp="playerComp" TargetFolderpath="bin" />
     <RunFunction FunctionName="setFaction:startingfac" FunctionValue="0" />
+    <SwitchToTheme ThemePathOrName="Themes/ExampleTheme.xml" FlickerInDuration="3.0"/>
     
   </Instantly>
 

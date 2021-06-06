@@ -1,17 +1,22 @@
 Errors Found. Writing report to Extensions/HackShield/report.txt
 
 Load Error:
-System.NullReferenceException 
+System.InvalidOperationException 
  
-Faction introfacnot found for setFaction action! 
+Target computer __ExtensionTest PC does not contain a Daemon that supports delayable
+actions
  
 Source : Hacknet 
  
-System.NullReferenceException: Faction introfacnot found for setFaction action!
-  at Hacknet.MissionFunctions.runCommand (Int32 value, System.String name) [0x00000] in
-  <filename unknown>:0
+System.InvalidOperationException: Target computer __ExtensionTest PC does not contain a
+Daemon that supports delayable actions
 
-  at Hacknet.SARunFunction.Trigger (System.Object os_obj) [0x00000] in <filename unknown>:0 
+  at Hacknet.DelayableActionSystem.FindDelayableActionSystemOnComputer (Hacknet.Computer c)
+  [0x00000] in <filename unknown>:0
+
+  at Hacknet.SASwitchToTheme.Trigger (System.Object os_obj) [0x00000] in <filename
+  unknown>:0
+
   at Hacknet.RunnableConditionalActions.Update (Single dt, System.Object os) [0x00000] in
   <filename unknown>:0
 
@@ -37,10 +42,12 @@ System.NullReferenceException: Faction introfacnot found for setFaction action!
  
  
  
-  at Hacknet.MissionFunctions.runCommand (Int32 value, System.String name) [0x00000] in
-  <filename unknown>:0
+  at Hacknet.DelayableActionSystem.FindDelayableActionSystemOnComputer (Hacknet.Computer c)
+  [0x00000] in <filename unknown>:0
 
-  at Hacknet.SARunFunction.Trigger (System.Object os_obj) [0x00000] in <filename unknown>:0 
+  at Hacknet.SASwitchToTheme.Trigger (System.Object os_obj) [0x00000] in <filename
+  unknown>:0
+
   at Hacknet.RunnableConditionalActions.Update (Single dt, System.Object os) [0x00000] in
   <filename unknown>:0
 
