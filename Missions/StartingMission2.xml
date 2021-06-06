@@ -19,7 +19,7 @@
     <body>
 Hey #PLAYERNAME#. 
 
-I want you to convert this code to text, use the python program, for more details, go to https://github.com/tanjilk/HackShield
+I want you to convert this code to text, use the python program, for more details, go to https://github.com/tanjilk/HackShield/tree/decoder
 
 Good luck
 
@@ -29,7 +29,7 @@ Good luck
     <attachments>
       <!-- Add attachments like links and notes here -->
       <note title="Performing decode">
-        https://github.com/tanjilk/HackShield
+        https://github.com/tanjilk/HackShield/tree/decoder
       </note>
     </attachments>
   </email>
