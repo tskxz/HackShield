@@ -1,0 +1,11 @@
+<ConditionalActions>
+  
+    
+    <OnConnect target="Db_shield">
+    
+      <LoadMission MissionName="Missions/SQLDatabase02sqlmission.xml" />
+    
+    </OnConnect>
+
+  
+</ConditionalActions>

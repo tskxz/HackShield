@@ -2,7 +2,7 @@
 <mission id="startingMission">
   <goals>
     <!-- Goals here -->
-    <goal type="getstring" target="ome199tkoepwqM@" />
+    <goal type="getstring" target="ome199tkoepwqM@!" />
   </goals>
   <!-- 
   Add your mission start and end items here

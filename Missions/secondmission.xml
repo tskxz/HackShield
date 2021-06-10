@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="secondmission">
+  <goals>
+    <!-- Goals here -->
+    
+  </goals>
+
+  <missionStart val="0">loadConditionalActions:Actions/sqldatabase02.xml</missionStart>
+
+  
+  <nextMission>NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>TSK</sender>
+    <subject>Crash Script</subject>
+    <body>
+Hey #PLAYERNAME#. I would like you to find a script that is crashing a computer, I would like you to access it because a client cannot access it. As you can access virtually, you could delete the script. I'll leave it in the attachments that contain a list of IPS and you have to see which is the right one, to see which is the right ip, it can't have letters, the only ip that doesn't have letters is the right ip.
+
+Thanks,
+
+- TSK
+</body>
+    <attachments>
+      <link comp="Db_shield" />
+    </attachments>
+  </email>
+</mission>

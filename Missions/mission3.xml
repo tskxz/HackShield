@@ -7,7 +7,7 @@
   Add your mission start and end items here
   <missionStart val="0">loadConditionalActions:Actions/ActionAsset.xml</missionStart>
   <missionEnd val="1">addRank</missionEnd> 
-  <nextMission>NONE</nextMission>
+  <nextMission>Missions/secondmission.xml</nextMission>
   <!-- 
   <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
   -->

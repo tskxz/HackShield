@@ -16,7 +16,7 @@
 
   <!-- Description that appears within Hacknet -->
   <Description> --- HackShield ---  
-Hacknet Extension to solve puzzles and codes and much more.</Description>
+HackShield Extension to solve codes and interactive missions.</Description>
   
   <!-- Factions involved in this extension! You can define as many or as few as you like -->
   <Faction>Factions/StartingFaction.xml</Faction>

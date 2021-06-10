@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="Db_shield" name="Database Shield Server" type="3" security="4">
+
+  <portsForCrack val="3" />
+  <ports>554, 21, 80</ports>
+  <trace time="60" />
+  <proxy time="1" />
+<!--
+  <eosDevice name="Richard Iphone 6" id="eosIntroPhone" icon="ePhone2" passOverride="ome199tkoepwqM@!">
+    <note>TestNote
+More text</note>
+    <note>Note filenames
+Note filenames are generated automatically by taking the first line of the file
+(in this case "Note Filenames") and replacing spaces with underscores.</note>
+    <mail username="test@jmail.com" pass="thisIstheaccountpass" />
+    <mail username="test2@jmail.com" pass="YouCanHaveLotsOfThese" />
+    <file path="eos/test" name="crackedFile.txt">This is mostly useful for jailbroken phones</file>
+  </eosDevice>
+-->
+  <file path="home/database" name="Database.dat">
+01010011 01101111 01110010 01110010 01111001 00100000 01100110 01101111 01110010 00100000 01110111 01100001 01110011 01110100 01101001 01101110 01100111 00100000 01111001 01101111 01110101 01110010 00100000 01110100 01101001 01101101 01100101
+  </file>
+  <file path="home/database" name="SQLDatabase.sql">00110011 00110010 00110010 00101110 00110101 00110011 00110010 00101110 00110001 01100111 00110010 00110011</file>
+  <file path="home/database" name="SQLDatabase01.sql">00110011 00110010 00110010 00101110 00110101 00110011 00110010 00101110 00111001 00110110 00110100</file>
+  <file path="home/database" name="SQLDatabase02.sql">00110011 00110010 00110010 00101110 00110101 00110011 00110010 00101110 00111001 00110110 00110100</file>
+  <file path="home/database" name="SQLDatabase03.sql">00110101 00110100 00110011 00101110 00110100 00110110 00110011 00101110 00110011 00110010 00110100 01100110 01100100</file>
+  <file path="bin" name="ThemeChanger.exe">#THEMECHANGER_EXE#</file>
+  
+</Computer>

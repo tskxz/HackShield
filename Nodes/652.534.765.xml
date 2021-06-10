@@ -1,0 +1,147 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="deleteme_pc" name="TEMP@R329321" ip="652.534.765" type="4" icon="chip">
+
+  <portsForCrack val="14392" />
+  
+  <ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
+  <trace time="-1" />
+  <addWebServer name="Website" url="Web/crash/crash.html" />
+  <file path="home/scripts" name="crash.cpp">
+error:
+    bignum_safe_free(modulus);
+    bignum_safe_free(generator);
+    bignum_safe_free(one);
+    bignum_safe_free(pmin1);
+    if(!bignum_ctx_invalid(ctx)) {
+        bignum_ctx_free(ctx);
+    }
+    ssh_dh_cleanup(session->next_crypto);
+    session->session_state = SSH_SESSION_STATE_ERROR;
+
+    return SSH_PACKET_USED;
+}
+
+static SSH_PACKET_CALLBACK(ssh_packet_client_dhgex_reply)
+{
+    struct ssh_crypto_struct *crypto=session->next_crypto;
+    int rc;
+    ssh_string pubkey_blob = NULL;
+    bignum server_pubkey = NULL;
+    (void)type;
+    (void)user;
+    SSH_LOG(SSH_LOG_PROTOCOL, "SSH_MSG_KEX_DH_GEX_REPLY received");
+
+    ssh_packet_remove_callbacks(session, ssh_dhgex_client_callbacks);
+    rc = ssh_buffer_unpack(packet,
+                           "SBS",
+                           pubkey_blob, server_pubkey,
+                           crypto->dh_server_signature);
+    if (rc == SSH_ERROR) {
+        ssh_set_error(session, SSH_FATAL, "Invalid DH_GEX_REPLY packet");
+        goto error;
+    }
+    rc = ssh_dh_keypair_set_keys(crypto->dh_ctx, DH_SERVER_KEYPAIR,
+                                 NULL, server_pubkey);
+  </file>
+
+    <file path="home/scripts" name="dhgroup.cpp">
+static bool dhgroup_better_size(uint32_t pmin,
+                                uint32_t pn,
+                                uint32_t pmax,
+                                size_t current_size,
+                                size_t proposed_size)
+{
+    if (current_size == proposed_size) {
+        return false;
+    }
+
+    if (current_size == pn) {
+        /* can't do better */
+        return false;
+    }
+
+  	true;
+
+    }
+
+    /* We're in the allowed window but a better match already exists. */
+    return false;
+}
+
+/** @internal
+ * @brief returns 1 with 1/n probability
+ * @returns 1 on with P(1/n), 0 with P(n-1/n).
+ */
+static bool invn_chance(int n)
+{
+    uint32_t nounce = 0;
+    int ok;
+
+    ok = ssh_get_random(nounce, sizeof(nounce), 0);
+    if (!ok) {
+        return false;
+    }
+    return (nounce % n) == 0;
+}
+
+/** @internal
+ * @brief retrieves a DH group from an open moduli file.
+ */
+  </file>
+
+<file path="home/scripts" name="slib.c">
+ rc = ssh_retrieve_dhgroup_file(moduli,
+                                   pmin,
+                                   pn,
+                                   pmax,
+                                   size,
+                                   generator,
+                                   modulus);
+    fclose(moduli);
+    if (rc == SSH_ERROR || *size == 0) {
+        goto error;
+    }
+    rc = bignum_hex2bn(generator, g);
+    if (rc == 0) {
+        goto error;
+    }
+    rc = bignum_hex2bn(modulus, p);
+    if (rc == 0) {
+        goto error;
+    }
+    SAFE_FREE(generator);
+    SAFE_FREE(modulus);
+
+    return SSH_OK;
+
+error:
+    bignum_safe_free(*g);
+    bignum_safe_free(*p);
+    SAFE_FREE(generator);
+    SAFE_FREE(modulus);
+
+    return SSH_ERROR;
+}
+  </file>
+
+  <file path="home/scripts" name="ssh_packets.c">
+static SSH_PACKET_CALLBACK(ssh_packet_server_dhgex_init){
+    (void) type;
+    (void) user;
+    SSH_LOG(SSH_LOG_DEBUG, "Received SSH_MSG_KEX_DHGEX_INIT");
+    ssh_packet_remove_callbacks(session, ssh_dhgex_server_callbacks);
+    ssh_server_dh_process_init(session, packet);
+    return SSH_PACKET_USED;
+}
+  </file>
+
+  <file path="home/scripts" name="dhssh.cc">
+void ssh_server_dhgex_init(ssh_session session){
+    /* register the packet callbacks */
+    ssh_packet_set_callbacks(session, ssh_dhgex_server_callbacks);
+    ssh_dh_init_common(session->next_crypto);
+    session->dh_handshake_state = DH_STATE_INIT;
+}
+  </file>
+
+</Computer>

@@ -1,130 +1,62 @@
 Errors Found. Writing report to Extensions/HackShield/report.txt
 
-Load Error:
+Mission Errors for Extensions/HackShield/Missions/secondmission.xml:
+Error running start function loadConditionalActions:Actions/sqldatabase02.xml
 System.FormatException 
  
-COMPUTER LOAD ERROR:
-Error loading computer "Extensions/HackShield/Nodes/assetpc.xml" 
-Error: OverflowException - Value too large or too small. 
+Unexpected end of file! 
  
 Source : Hacknet 
  
-System.FormatException: COMPUTER LOAD ERROR:
-Error loading computer "Extensions/HackShield/Nodes/assetpc.xml" 
-Error: OverflowException - Value too large or too small. ---> System.OverflowException:
-Value too large or too small.
+System.FormatException: Unexpected end of file!
+  at Hacknet.SerializableAction.Deserialize (System.Xml.XmlReader rdr) [0x00000] in <filename
+  unknown>:0
 
-  at System.Int32.Parse (System.String s, NumberStyles style, IFormatProvider provider)
+  at Hacknet.SerializableConditionalActionSet+<>c__DisplayClass1.<Deserialize>b__0
+  (System.Xml.XmlReader xmlReader, System.String EndKeyName) [0x00000] in <filename
+  unknown>:0
+
+  at Hacknet.SerializableCondition.Deserialize (System.Xml.XmlReader rdr, System.Action`2
+  bodyContentReadAction) [0x00000] in <filename unknown>:0
+
+  at Hacknet.SerializableConditionalActionSet.Deserialize (System.Xml.XmlReader rdr)
   [0x00000] in <filename unknown>:0
 
-  at System.Xml.XmlConvert.ToInt32 (System.String s) [0x00000] in <filename unknown>:0 
-  at System.Xml.XQueryConvert.StringToInt (System.String value) [0x00000] in <filename
-  unknown>:0
+  at Hacknet.RunnableConditionalActions.Deserialize (System.Xml.XmlReader rdr) [0x00000] in
+  <filename unknown>:0
 
-  at System.Xml.XmlReader.ReadContentAsInt () [0x00000] in <filename unknown>:0 
-  at Hacknet.ComputerLoader.loadComputer (System.String filename, Boolean
-  preventAddingToNetmap, Boolean preventInitDaemons) [0x00000] in <filename unknown>:0
+  at Hacknet.RunnableConditionalActions.LoadIntoOS (System.String filepath, System.Object
+  OSobj) [0x00000] in <filename unknown>:0
 
-  at Hacknet.Computer.loadFromFile (System.String filename) [0x00000] in <filename unknown>:0
-  
+  at Hacknet.MissionFunctions.runCommand (Int32 value, System.String name) [0x00000] in
+  <filename unknown>:0
 
-  at Hacknet.Extensions.ExtensionLoader+<>c__DisplayClass2.<LoadNewExtensionSession>b__0
-  (System.String filename) [0x00000] in <filename unknown>:0
-
-  --- End of inner exception stack trace ---
-  at Hacknet.Extensions.ExtensionLoader+<>c__DisplayClass2.<LoadNewExtensionSession>b__0
-  (System.String filename) [0x00000] in <filename unknown>:0
-
-  at Hacknet.Utils.ActOnAllFilesRevursivley (System.String foldername, System.Action`1
-  FileAction) [0x00000] in <filename unknown>:0
-
-  at Hacknet.Extensions.ExtensionLoader.LoadNewExtensionSession
-  (Hacknet.Extensions.ExtensionInfo info, System.Object os_obj) [0x00000] in <filename
-  unknown>:0
-
-  at Hacknet.OS.LoadContent () [0x00000] in <filename unknown>:0 
-  at Hacknet.ScreenManager.AddScreen (Hacknet.GameScreen screen, Nullable`1
-  controllingPlayer) [0x00000] in <filename unknown>:0
-
-  at Hacknet.ScreenManager.AddScreen (Hacknet.GameScreen screen) [0x00000] in <filename
-  unknown>:0
-
-  at Hacknet.Misc.ExtensionTests.SetupOSForTests (System.String ActiveExtensionFoldername,
-  Hacknet.ScreenManager screenMan) [0x00000] in <filename unknown>:0
-
-  at Hacknet.Misc.ExtensionTests.TestExtensionForRuntime (Hacknet.ScreenManager screenMan,
-  System.String path, System.Int32& errorsAdded) [0x00000] in <filename unknown>:0
- 
-Inner : --------------- 
- 
-System.OverflowException  
-      
-    Value too large or too small.  
-      
-    Source : mscorlib  
-      
-    System.OverflowException: Value too large or too small. 
-      at System.Int32.Parse (System.String s, NumberStyles style, IFormatProvider provider) 
-      [0x00000] in <filename unknown>:0 
-     
-      at System.Xml.XmlConvert.ToInt32 (System.String s) [0x00000] in <filename unknown>:0  
-      at System.Xml.XQueryConvert.StringToInt (System.String value) [0x00000] in <filename 
-      unknown>:0 
-     
-      at System.Xml.XmlReader.ReadContentAsInt () [0x00000] in <filename unknown>:0  
-      at Hacknet.ComputerLoader.loadComputer (System.String filename, Boolean 
-      preventAddingToNetmap, Boolean preventInitDaemons) [0x00000] in <filename unknown>:0 
-     
-      at Hacknet.Computer.loadFromFile (System.String filename) [0x00000] in <filename unknown>:0
-      
-       
-     
-      at Hacknet.Extensions.ExtensionLoader+<>c__DisplayClass2.<LoadNewExtensionSession>b__0
-
-      (System.String filename) [0x00000] in <filename unknown>:0 
-      
-      
-      
-      at System.Int32.Parse (System.String s, NumberStyles style, IFormatProvider provider) 
-      [0x00000] in <filename unknown>:0 
-     
-      at System.Xml.XmlConvert.ToInt32 (System.String s) [0x00000] in <filename unknown>:0  
-      at System.Xml.XQueryConvert.StringToInt (System.String value) [0x00000] in <filename 
-      unknown>:0 
-     
-      at System.Xml.XmlReader.ReadContentAsInt () [0x00000] in <filename unknown>:0  
-      at Hacknet.ComputerLoader.loadComputer (System.String filename, Boolean 
-      preventAddingToNetmap, Boolean preventInitDaemons) [0x00000] in <filename unknown>:0 
-     
-      at Hacknet.Computer.loadFromFile (System.String filename) [0x00000] in <filename unknown>:0
-      
-       
-     
-      at Hacknet.Extensions.ExtensionLoader+<>c__DisplayClass2.<LoadNewExtensionSession>b__0
-
-      (System.String filename) [0x00000] in <filename unknown>:0 
+  at Hacknet.Misc.ExtensionTests.TestExtensionMission (System.Object mission, System.String
+  filepath, System.Object os) [0x00000] in <filename unknown>:0
  
  
  
-  at Hacknet.Extensions.ExtensionLoader+<>c__DisplayClass2.<LoadNewExtensionSession>b__0
-  (System.String filename) [0x00000] in <filename unknown>:0
-
-  at Hacknet.Utils.ActOnAllFilesRevursivley (System.String foldername, System.Action`1
-  FileAction) [0x00000] in <filename unknown>:0
-
-  at Hacknet.Extensions.ExtensionLoader.LoadNewExtensionSession
-  (Hacknet.Extensions.ExtensionInfo info, System.Object os_obj) [0x00000] in <filename
+  at Hacknet.SerializableAction.Deserialize (System.Xml.XmlReader rdr) [0x00000] in <filename
   unknown>:0
 
-  at Hacknet.OS.LoadContent () [0x00000] in <filename unknown>:0 
-  at Hacknet.ScreenManager.AddScreen (Hacknet.GameScreen screen, Nullable`1
-  controllingPlayer) [0x00000] in <filename unknown>:0
-
-  at Hacknet.ScreenManager.AddScreen (Hacknet.GameScreen screen) [0x00000] in <filename
+  at Hacknet.SerializableConditionalActionSet+<>c__DisplayClass1.<Deserialize>b__0
+  (System.Xml.XmlReader xmlReader, System.String EndKeyName) [0x00000] in <filename
   unknown>:0
 
-  at Hacknet.Misc.ExtensionTests.SetupOSForTests (System.String ActiveExtensionFoldername,
-  Hacknet.ScreenManager screenMan) [0x00000] in <filename unknown>:0
+  at Hacknet.SerializableCondition.Deserialize (System.Xml.XmlReader rdr, System.Action`2
+  bodyContentReadAction) [0x00000] in <filename unknown>:0
 
-  at Hacknet.Misc.ExtensionTests.TestExtensionForRuntime (Hacknet.ScreenManager screenMan,
-  System.String path, System.Int32& errorsAdded) [0x00000] in <filename unknown>:0
+  at Hacknet.SerializableConditionalActionSet.Deserialize (System.Xml.XmlReader rdr)
+  [0x00000] in <filename unknown>:0
+
+  at Hacknet.RunnableConditionalActions.Deserialize (System.Xml.XmlReader rdr) [0x00000] in
+  <filename unknown>:0
+
+  at Hacknet.RunnableConditionalActions.LoadIntoOS (System.String filepath, System.Object
+  OSobj) [0x00000] in <filename unknown>:0
+
+  at Hacknet.MissionFunctions.runCommand (Int32 value, System.String name) [0x00000] in
+  <filename unknown>:0
+
+  at Hacknet.Misc.ExtensionTests.TestExtensionMission (System.Object mission, System.String
+  filepath, System.Object os) [0x00000] in <filename unknown>:0

@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="sqldatabase02sqlmission">
+  <goals>
+    <!-- Goals here -->
+    <goal type="filedeletion" target="deleteme_pc" file="crash.cpp" path="home/scripts"/>
+    
+  </goals>
+  
+  <nextMission>NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>TSK</sender>
+    <subject>Crash Script (1)</subject>
+    <body>
+I've found the right sql, I left the file name in the attachments.
+All you have to do is find a script called crash and you have to delete it.
+When you're done, reply to this mail.
+
+- TSK
+</body>
+
+    <attachments>
+      <note title="FileName">
+SQLDatabase02.sql
+      </note>
+    </attachments>
+
+</email>
+</mission>
