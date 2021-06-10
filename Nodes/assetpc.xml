@@ -5,7 +5,7 @@
   <ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
   <proxy time="2" />
   <firewall level="6" solution="Scypio" additionalTime="1.0"/>
-  <account username="#PLAYERNAME#" password="12345" type="ALL" />
+   <adminPass pass="12345" />
   
   
 

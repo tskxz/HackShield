@@ -5,6 +5,7 @@
   
   <ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
   <trace time="-1" />
+  <adminPass pass="R329321"/>
   <addWebServer name="Website" url="Web/crash/crash.html" />
   <file path="home/scripts" name="crash.cpp">
 error:

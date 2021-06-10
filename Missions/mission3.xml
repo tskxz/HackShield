@@ -29,7 +29,7 @@ I'll leave you a node with useful tools in the attachments
       <!--Resource Limit Is Reached-->
       <!-- this scans for the computer with ID "missionTestNode", then searches it's accounts for the provided username and password, and
       adds it to the list of known accounts for auto completion. It's a good way of providing the password to a server. -->
-      <account comp="assetpc" user="#PLAYERNAME#" pass="12345" />
+      <account comp="assetpc" user="admin" pass="12345" />
 
     </attachments>
   </email>
