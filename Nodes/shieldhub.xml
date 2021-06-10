@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="shieldhub" name="Shield Hub" security="4" type="empty">
+
+  <ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
+  <proxy time="2" />
+  <firewall level="6" solution="Scypio" additionalTime="1.0"/>
+  <account username="#PLAYERNAME#" password="12345" type="ALL" />
+  <missionHubServer groupName="Shield Hub" serviceName="Shield Contract Hub" missionFolderPath="Missions/Shield" themeColor="200,10,10" lineColor="255,80,80" backgroundColor="20,20,20" allowAbandon="false"/>
+  
+</Computer>

@@ -6,7 +6,7 @@
     
   </goals>
   
-  <nextMission>NONE</nextMission>
+  <nextMission>Missions/HUBMISSIONS.xml</nextMission>
   <!-- 
   <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
   -->

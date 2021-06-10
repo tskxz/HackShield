@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+    <RunFunction FunctionName="setHubServer:shieldhub" />
+    <SwitchToTheme ThemePathOrName="Themes/RedTheme.xml" FlickerInDuration="3.0"/>
+
+  </Instantly>
+
+</ConditionalActions>

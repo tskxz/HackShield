@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="hubmissions">
+  <goals>
+    <!-- Goals here -->
+  </goals>
+
+  <missionStart val="0">loadConditionalActions:Actions/missionhubstart.xml</missionStart>
+  
+  <nextMission>NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>TSK</sender>
+    <subject>Congratulations!</subject>
+    <body>
+I wanted to say congratulations, you managed to pass the test.
+You have now been hired by ShieldHub.
+Reply with empty message to accept it.
+
+
+- TSK
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+      <link comp="shieldhub" />
+      <!--Resource Limit Is Reached-->
+      <!-- this scans for the computer with ID "missionTestNode", then searches it's accounts for the provided username and password, and
+      adds it to the list of known accounts for auto completion. It's a good way of providing the password to a server. -->
+      <account comp="shieldhub" user="#PLAYERNAME#" pass="12345" />
+    </attachments>
+  </email>
+</mission>
