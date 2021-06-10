@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="assetpc" name="Assets Tools" ip="965.452.222" type="2" security="3">
+
+  <portsForCrack val="5312" />
+  <ports>21, 22, 25, 80, 1433, 104, 6881, 443, 192, 554</ports>
+  <proxy time="2" />
+  <firewall level="6" solution="Scypio" additionalTime="1.0"/>
+  <account username="#PLAYERNAME#" password="12345" type="ALL" />
+  
+  
+
+</Computer>

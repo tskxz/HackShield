@@ -4,7 +4,7 @@
   <portsForCrack val="0" />
   <ports>21</ports>
   <trace time="-1" />
-
+  <addWebServer name="Website Pharmacy" url="Web/Pharmacy/Website.html" />
   <file path="home/games" name="hacknet.exe">#BINARY#</file>
   <file path="home/games" name="amongus.exe">#BINARY#</file>
   <file path="home" name="google-chrome.deb">#BINARY#</file>

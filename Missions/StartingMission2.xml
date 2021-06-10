@@ -9,17 +9,17 @@
   missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
   missionEnd val="1">addRank</missionEnd> 
   -->
-  <nextMission>NONE</nextMission>
+  <nextMission>Missions/mission3.xml</nextMission>
   <!-- 
   <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
   -->
   <email>
     <sender>TSK</sender>
-    <subject>Discovering the mobile phone password (1)</subject>
+    <subject>Discovering password of mobile phone (1)</subject>
     <body>
 Hey #PLAYERNAME#. 
 
-I want you to convert this code to text, use the python program, for more details, go to https://github.com/tanjilk/HackShield/tree/decoder
+I want you to convert this code to text to get the password of mobile phone, use the python program
 
 Good luck
 
@@ -29,7 +29,7 @@ Good luck
     <attachments>
       <!-- Add attachments like links and notes here -->
       <note title="Performing decode">
-        https://github.com/tanjilk/HackShield/tree/decoder
+Use the decoder at https://github.com/tanjilk/HackShield/tree/decoder
       </note>
     </attachments>
   </email>

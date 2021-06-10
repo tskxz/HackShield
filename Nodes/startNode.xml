@@ -4,7 +4,7 @@
   <portsForCrack val="1" />
   <ports>21</ports>
   <trace time="-1" />
-
+  <addWebServer name="Website Pharmacy" url="Web/Pharmacy/Website.html" />
   <file path="home/products" name="Pills.dat">#BINARY#</file>
   <file path="home/products" name="Syrups.dat">#BINARY#</file>
   <file path="home/products" name="Condoms.dat">#BINARY#</file>

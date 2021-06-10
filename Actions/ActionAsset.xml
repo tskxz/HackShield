@@ -1,0 +1,12 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+    <RunFunction FunctionName="setAssetServer:assetpc" />
+    <AddAsset FileName="ftpbounce.sh" FileContents="#FTP_FAST_EXE#" TargetComp="assetpc" TargetFolderpath="bin" />
+    <AddAsset FileName="hydra.sh" FileContents="#WEB_CRACK#" TargetComp="assetpc" TargetFolderpath="bin" />
+
+
+  </Instantly>
+
+</ConditionalActions>
