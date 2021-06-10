@@ -4,7 +4,7 @@
 To use decoder.py, you need to install [python3](https://www.python.org/downloads/)
 
 ### Installation at linux
-```
+```sh
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install python3.6
@@ -13,7 +13,7 @@ cd HackShield/
 ```
 
 ### Usage of the decoder.py
-```
+```sh
 python3 decoder.py
 ```
 
