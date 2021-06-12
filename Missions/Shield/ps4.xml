@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="apresentation">
+  <goals>
+    <!-- Goals here -->
+    
+  </goals>
+
+  <nextMission>NONE</nextMission>
+   
+  <posting title="PS4 Scan">Scan the official PS4 Website to get the latest reports into Shield Hub</posting>
+  
+  <email>
+    <sender>Shield CEO</sender>
+    <subject>PS4 Scan</subject>
+    <body>
+Hey #PLAYERNAME#. I'm Brian. You will use nmap.
+Scan the official ps4 website.
+
+
+Thanks,
+
+- Brian
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+      <note title="Nmap command">
+        nmap -v -A store.playstation.com
+      </note>
+    </attachments>
+  </email>
+</mission>

@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="inspectelement">
+  <goals>
+    <!-- Goals here -->
+    <goal type="getstring" target="516.763.345" />
+  </goals>
+   
+ 
+  <missionStart val="0">loadConditionalActions:Actions/addFlagF2.xml</missionStart>
+  <missionEnd val="1">addRank</missionEnd> 
+  
+  <nextMission>NONE</nextMission>
+   
+  <posting title="Page source" reqs="firstmissionpassed">Solve and view the pages sources</posting>
+  
+  <email>
+    <sender>Shield CEO</sender>
+    <subject>Page Source</subject>
+    <body>
+Hey #PLAYERNAME#. I'm Brian. I'll leave you a website again. 
+Please check the page source in detail.
+
+I want you to reply the email with an ip. We cannot say the reason for wanting this ip. Just send the ip
+
+Thanks,
+
+- Brian
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+      <note title="Website">
+        http://flask-tanjil.herokuapp.com/shield@92034
+      </note>
+    </attachments>
+  </email>
+</mission>

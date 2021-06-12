@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="fakevpn" name="VPN Shield" ip="516.763.345" type="2" security="1">
+
+  <portsForCrack val="1365" />
+  <adminPass pass="bromoment" />
+  <ports>21, 80</ports>
+  <trace time="-1" />
+  <addWebServer name="@@@@" url="Web/Shield/Website.html" />
+  <file path="home/downloads" name="VPN.sh">#BINARY#</file>
+  <file path="home/downloads" name="VPN.sh">#BINARY#</file>
+  <customthemefile path="sys" name="blue_server.sys" themePath="Themes/ExampleTheme.xml"/>
+
+</Computer>

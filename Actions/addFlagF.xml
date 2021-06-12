@@ -1,0 +1,10 @@
+<ConditionalActions>
+  
+  <Instantly>
+    
+    <RunFunction FunctionName="addFlags:firstmissionpassed" />
+
+
+  </Instantly>
+
+</ConditionalActions>

@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="thirdshield">
+  <goals>
+    <!-- Goals here -->
+    <goal type="filedownload" target="fakevpn" file="OpenVPN.sh" path="home/downloads"/>
+
+  </goals>
+   
+  
+  <missionEnd val="1">addRank</missionEnd> 
+  
+  <nextMission>NONE</nextMission>
+   
+  <posting title="Get VPN" reqs="secondmissionpassed"></posting>
+  
+  <email>
+    <sender>Shield CEO</sender>
+    <subject>VPN</subject>
+    <body>
+Get the vpn connecting to the previusly IP address that you found.
+Have a nice day,
+
+- Brian
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+    </attachments>
+  </email>
+</mission>

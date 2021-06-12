@@ -4,11 +4,11 @@
     <!-- Goals here -->
     <goal type="getstring" target="??????@" />
   </goals>
-  <!-- 
+   
   Add your mission start and end items here
-  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
-  missionEnd val="1">addRank</missionEnd> 
-  -->
+  <missionStart val="0">loadConditionalActions:Actions/addFlagF.xml</missionStart>
+  <missionEnd val="1">addRank</missionEnd> 
+  
   <nextMission>NONE</nextMission>
    
   <posting title="Presentation">This is a presentation to see how attentive you are. Come try and let us see how your skills.</posting>
