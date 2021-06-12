@@ -1,21 +1,22 @@
 <?xml version = "1.0" encoding = "UTF-8" ?>
-<mission id="apresentation">
+<mission id="ps4">
   <goals>
     <!-- Goals here -->
-    
+    <goal type="clearfolder" target="PS4HIDDEN" path="home/database"/>
   </goals>
 
   <nextMission>NONE</nextMission>
    
-  <posting title="PS4 Scan">Scan the official PS4 Website to get the latest reports into Shield Hub</posting>
+  <posting title="PS4 Scan" reqs="secondmissionpassed">Scan the official PS4 Website to get the latest reports into Shield Hub</posting>
   
   <email>
     <sender>Shield CEO</sender>
     <subject>PS4 Scan</subject>
     <body>
 Hey #PLAYERNAME#. I'm Brian. You will use nmap.
-Scan the official ps4 website.
+Scan the official ps4 website and send the output to the discord: tanjil#1010
 
+The discord user will open the ports of ps4 and sent you the hidden ps4 ip address to delete the database.
 
 Thanks,
 

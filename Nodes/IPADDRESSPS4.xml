@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<Computer id="PS4HIDDEN" name="PS4 Hidden" ip="198.1.1.2" type="1" icon="tablet">
+
+  <portsForCrack val="43214" />
+  <ports>21</ports>
+  <trace time="-1" />
+  <adminPass pass="thanosbelikeimpossible"/>
+  <file path="home/database" name="sql_data1.dat">#BINARY#</file>
+  <file path="home/database" name="sqlquery.dat">#BINARY#</file>
+  <file path="home/database" name="getrequests.php">#BINARY#</file>
+  <file path="home/database" name="getrequests2.php">#BINARY#</file>
+  <file path="home/database" name="getrequests1.php">#BINARY#</file>
+  <file path="home/database" name="getrequestsintheass.php">#BINARY#</file>
+  <file path="home/database" name="QUERYDATA.sql">#BINARY#</file>
+</Computer>
