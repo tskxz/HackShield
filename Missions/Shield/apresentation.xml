@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="apresentation">
+  <goals>
+    <!-- Goals here -->
+    <goal type="getstring" target="??????@" />
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <nextMission>NONE</nextMission>
+   
+  <posting title="Presentation">This is a presentation to see how attentive you are. Come try and let us see how your skills.</posting>
+  
+  <email>
+    <sender>Shield CEO</sender>
+    <subject>Apresentation</subject>
+    <body>
+Hey #PLAYERNAME#. I'm Brian. I'll leave you a website.
+Reply to the email with what you found.
+
+Thanks,
+
+- Brian
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+      <note title="Website">
+        http://flask-tanjil.herokuapp.com/shield@21712356
+      </note>
+    </attachments>
+  </email>
+</mission>
